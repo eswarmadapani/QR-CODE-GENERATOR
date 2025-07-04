@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  background-image: url(resources/qa-bg.jpg);
+  background-color: #1e1f2f;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: px;
+  height: 62px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f2a;
+  border: 2px solid #3b3bf0;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 500px;
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 18px;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b0b3c7;
+  opacity: 1;
+  font-size: 16px;
+}
+
+button {
+  padding: 18px 30px;
+  background-color: #3b3bf0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #2323a0;
+}
+
+.qr-output {
+  margin-top: 40px;
+}
+
+.qr-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.qr-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #3b3bf0;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.qr-buttons button:hover {
+  background-color: #2e2ee6;
+}
+
+.qr-buttons button img {
+  width: 18px;
+  height: 18px;
+}
+
+.qr-output canvas {
+  background: rgba(38, 4, 233, 0.922);
+  padding: 2px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  size: 1cm;
+}
